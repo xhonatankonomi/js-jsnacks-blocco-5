@@ -11,4 +11,23 @@ const zucchine = [
   { type: 'Calabrese', weight: 14, length: 4 },
 ];
 
+let johnnySins = [];
+let cinesi = [];
+
+for (let i = 0; i < zucchine.length; i++) {
+  const element = zucchine[i]
+  if (element.length >= 15) {
+    johnnySins.push(element)
+  } else {
+    cinesi.push(element)
+  }
+}
+console.log(johnnySins)
+console.log(cinesi)
+
+const johnnySins1 = zucchine.filter((zucchina) => zucchina.length >= 15);
+const cinesi1 = zucchine.filter((zucchina) => zucchina.length < 15)
+
+console.log(johnnySins1)
+console.log(cinesi1)
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
