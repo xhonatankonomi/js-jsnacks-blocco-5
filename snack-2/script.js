@@ -4,5 +4,14 @@ const people = [
   { name: 'Marco', age: 67 }
 ];
 
+for (let i = 0; i < people.length; i++) {
+  const element = people[i];
+  console.log(element.name);
+};
+
+people.forEach((element) => {
+  console.log(element)
+}
+)
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
